@@ -1,5 +1,7 @@
 # Saltin asennus
 Käytin Saltin asennukseen Tero Karvisen kokoamaa asennusohjetta hänen Infra as Code 2023 -sivustolta.
+![img](./Asenna_Salt.png)
+
 
 
 ## References
