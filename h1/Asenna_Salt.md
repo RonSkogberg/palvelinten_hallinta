@@ -1,8 +1,5 @@
 # Saltin asennus
 Käytin Saltin asennukseen Tero Karvisen kokoamaa asennusohjetta hänen Infra as Code 2023 -sivustolta.
-![img](./Asenna_Salt.png)
-
-
 
 ## References
 Karvinen 2023: Infra as Code 2023 https://terokarvinen.com/2023/configuration-management-2023-autumn/
