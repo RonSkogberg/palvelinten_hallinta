@@ -25,7 +25,24 @@ Tiivistän Karvisen ohjeen seuraavin pointein:
 - Näin olet luonut uuden virtuaalikoneen ja ottanut sen etähallintaasi noin 30 sekunnissa
 
 ### Salt Vagrant - automatically provision one master and two slaves
+Tero karvinen kertoo kirjoittamasaan artikkelissa "Salt Vagrant - automatically provision one master and two slaves" vaiheittain siitä, kuinka voit ottaa käyttöösi valmiiksi luodun kolmen tietokoneen verkon, ja testailla sitä Saltin avulla (Karvinen 2023b).
 
+
+Tiivistän Karvisen artikkelin seuraavin pointein:
+- Asenna virtuaaliympäristö (Virtualbox & Vagrant). Luo "saltdemo" hakemisto ja sinne Vagrant-tiedosto
+- Kopio Karvisen valmiiksi koodama kolmen koneen Vagrant-tiedoston sisältö luomaasi tiedostoon.
+- Boottaa nämä kolme konetta komennolla: ```$ vagrant up``` Boottaus saattaa kestää useita minuutteja.
+- Hyväksy orjat (koneet) kirjautumalla herra-koneelle (master). Kirjautumiskomento on: ```$ vagrant ssh tmaster```
+- Orja-koneet ovat lähettäneet ennakoidusti avaimensa herra-koneelle. Hyväksy ne herra-koneella
+- Testaa yhteyden toimivuus Komennolla ```$ sudo salt '*' test.ping```. Terminaaliin tulisi tulla arvot "True" orja-koneiden kohdalla
+- Kun yhteys toimii, voit ohjata orja-koneita ja etsiä niistä tietoja käyttämällä esimerkiksi seuraavia komentoja: ```$ sudo salt '*' cmd.run 'hostname -I'``` & ```$ sudo salt '*' grains.items```
+- Idempotenttisia komentoja tulisi suosia herra-orja -arkkitehtuurissa
+- Voit käyttää kaikkia Saltin tilafunktiosta, kuten pkg, file, service, user, cmd
+- Koska orjat ovat karjaa, ei lemmikkejä, tulisi ne päästää päiviltä heti, kun ne ovat suorittaneet velvollisuutensa ja kun niitä ei enää tarvita. Tämä onnistuu komennoilla: ```$ exit``` & ```$ vagrant destroy```
+
+## Asenna Vagrant
+Tässä tehtävässä Asennan Vagrantin 
+  
 ## References
 Bias 2016: The History of Pets vs Cattle and How to Use the Analogy Properly. Luettavissa: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/. Luettu 3.11.2023.
 
