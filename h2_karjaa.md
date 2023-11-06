@@ -55,7 +55,7 @@ Itse Vagrant-tiedoston luontiin käytin komentoa ```$ vagrant init hashicorp/pre
 
 ![ekavirtualikone](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/91258b58-c4e0-4efd-8510-03eef172bd75)
 
-Loin SSH-yhteyden virtuaalikoneeseeni ```$ vagrant ssh``` komennolla. Komentorivi informoi, ettei Ubuntu versioni ole tuettu ja tarjosi mahdollisuuden päivittää sen ```$ do-release-upgrade``` komennolla. Kokeilin päivittää, mutta tuntemattomasta syystä se ei onnistunut. SSH-yhteyden luonti onnistui kuitenkin kuten.
+Loin SSH-yhteyden virtuaalikoneeseeni ```$ vagrant ssh``` komennolla. Komentorivi informoi, ettei Ubuntu versioni ole tuettu ja tarjosi mahdollisuuden päivittää sen ```$ do-release-upgrade``` komennolla. Kokeilin päivittää, mutta tuntemattomasta syystä se ei onnistunut. SSH-yhteyden luonti onnistui kuitenkin.
 
 ![ssh_yhteysluonti](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/e2c58b4c-6abb-43be-979a-f7c80df9e395)
 
@@ -78,7 +78,16 @@ Suoritin ```$ vagrant up``` komennon Command Promtissa, joka luo uuden virtuaali
 
 ## Asenna Saltin herra-orja arkkitehtuuri toimimaan verkon yli
 
-  
+Yritin ottaa SSH-yhteyden luomaani herrakäyttäjään komennolla ```$ vagrant ssh tmaster```, mutta vastaukseksi sain seuraavan komennon:
+
+![Vagrant_virhe](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/8608beed-ea08-4b3f-81c4-642f61b8a0f9)
+
+Taistelin tämän ongelman kanssa useita tunteja, enkä vieläkään keksinyt saati löytänyt netistä selkeää vastausta siihen, miten korjata tämän. Tämä "vagrant@127.0.0.1: Permission denied (publickey)." viesti viitaa ilmeisesti siihen, että avaimien suhteen on jotain häikkää. Poistin virtuaalikoneet ```vagrant destroy``` komennolla, ja koitin rakentaa ne uudestaan käyttäen suoraa kopiota Karvisen Vagrantfilen sisällöstä (Vagrantfileä, joka luo isännän ja kaksi orjaa). Lopputulos oli kuitenkin sama error, joka esiintyy edellisessä kuvassa. 
+
+Tehtävässä "Yksi maankiertäjä" loin Vagrantfileen perustuvan virtuaalikoneen, jolloin SSH-yhteyden luonti onnistui. En siis käsitä yhtään, missä vika voisi olla, eikä täten aihealueen jatkotehtäviäkään ole (ilmeisesti) mahdollista tehdä, koska ne perustuvat tämän tehtävän onnistuneeseen lopputulokseen.
+
+Teen palautuksen tästä ennen määräaikaa, mutta koitan vielä ennen tunnin alkua saada SSH-yhteyden toimimaan ja tehtävän muut osa-alueet tehtyä. Jos tämä teksti on tässä vielä 7.11.2023 klo 14, olen epäonnistunut tehtävässäni...
+
 ## References
 Bias 2016: The History of Pets vs Cattle and How to Use the Analogy Properly. Luettavissa: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/. Luettu 3.11.2023.
 
