@@ -82,7 +82,7 @@ Yritin ottaa SSH-yhteyden luomaani herrakäyttäjään komennolla ```$ vagrant s
 
 ![Vagrant_virhe](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/8608beed-ea08-4b3f-81c4-642f61b8a0f9)
 
-Taistelin tämän ongelman kanssa useita tunteja, enkä vieläkään keksinyt saati löytänyt netistä selkeää vastausta siihen, miten korjata tämän. Tämä "vagrant@127.0.0.1: Permission denied (publickey)." viesti viitaa ilmeisesti siihen, että avaimien suhteen on jotain häikkää. Poistin virtuaalikoneet ```vagrant destroy``` komennolla, ja koitin rakentaa ne uudestaan käyttäen suoraa kopiota Karvisen Vagrantfilen sisällöstä (Vagrantfileä, joka luo isännän ja kaksi orjaa). Lopputulos oli kuitenkin sama error, joka esiintyy edellisessä kuvassa. 
+Taistelin tämän ongelman kanssa useita tunteja, enkä vieläkään keksinyt saati löytänyt netistä selkeää vastausta siihen, miten korjata tämän. Tämä ```vagrant@127.0.0.1: Permission denied (publickey).``` viesti viitaa ilmeisesti siihen, että avaimien suhteen on jotain häikkää. Poistin virtuaalikoneet ```vagrant destroy``` komennolla, ja koitin rakentaa ne uudestaan käyttäen suoraa kopiota Karvisen Vagrantfilen sisällöstä (Vagrantfileä, joka luo isännän ja kaksi orjaa). Lopputulos oli kuitenkin sama error, joka esiintyy edellisessä kuvassa. 
 
 Tehtävässä "Yksi maankiertäjä" loin Vagrantfileen perustuvan virtuaalikoneen, jolloin SSH-yhteyden luonti onnistui. En siis käsitä yhtään, missä vika voisi olla, eikä täten aihealueen jatkotehtäviäkään ole (ilmeisesti) mahdollista tehdä, koska ne perustuvat tämän tehtävän onnistuneeseen lopputulokseen.
 
