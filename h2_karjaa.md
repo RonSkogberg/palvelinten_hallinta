@@ -41,10 +41,36 @@ Tiivistän Karvisen artikkelin seuraavin pointein:
 - Koska orjat ovat karjaa, ei lemmikkejä, tulisi ne päästää päiviltä heti, kun ne ovat suorittaneet velvollisuutensa ja kun niitä ei enää tarvita. Tämä onnistuu komennoilla: ```$ exit``` & ```$ vagrant destroy```
 
 ## Asenna Vagrant
-Tässä tehtävässä Asennan Vagrantin 
+Tässä osiossa asennan Vagrantin isäntäkäyttöjärjestelmälläni. Vagrantin asennusohjelman ja -ohjeet löysin HashiCorpin omilta sivuilta (HashiCorp Developer s.a) Itse asennus oli yksinkertainen; latasin Windowsille Vagrantin asennusohjelman ja suoritin sen seuraten asennussohjelman ohjeita.
+
+![vagrabtin_asennus33](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/09dfc28c-3ec4-4d4b-8be5-7a695344abb8)
+
+Lopuksi vielä tarkistin, että Vagrant oli asennettu käyttäen ```$ vagrant --version``` komentoa Windowsin Command Promtissa. Tämä tuotti vastauksen "Vagrant 4.2.0", joka kertoo että Vagrantin versio 4.2.0 on asennettuna.
+
+![Vagrantin_asennus_checkkaus](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/2629dd8a-6a62-498c-9698-362ef069b501)
+
+## Yksi maankiertäjä
+Tässä osiossa loin virtuaalikoneen Vagrantin avulla, loin SSH yhteyden siihen ja testasin sen nettiyhteyden toimivuutta. (BrianC 2014)
+Itse Vagrant-tiedoston luontiin käytin komentoa ```$ vagrant init hashicorp/precise32```. Tämä loi VagrantFilen. Seuraavaksi loin ja käynnistin uuden virtuaalikoneen ```$ vagrant up``` komennolla. Uusi virtuaalikone perustuu aiemmin luomaani VagrantFileen.
+
+![ekavirtualikone](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/91258b58-c4e0-4efd-8510-03eef172bd75)
+
+Loin SSH-yhteyden virtuaalikoneeseeni ```$ vagrant ssh``` komennolla. Komentorivi informoi, ettei Ubuntu versioni ole tuettu ja tarjosi mahdollisuuden päivittää sen ```$ do-release-upgrade``` komennolla. Kokeilin päivittää, mutta tuntemattomasta syystä se ei onnistunut. SSH-yhteyden luonti onnistui kuitenkin kuten.
+
+![ssh_yhteysluonti](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/e2c58b4c-6abb-43be-979a-f7c80df9e395)
+
+Lopuksi vielä testasin virtuaalikoneeni netin toimivuutta pingaamalla Googlen sivuille komennolla:
+```$ ping google.com```. Pingaus toimi, eikä paketteja hävinnyt matkalla, joten yhteys toimii!
+
+![ping](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/602a01c8-eac4-45e3-a316-d8c003be3018)
+
   
 ## References
 Bias 2016: The History of Pets vs Cattle and How to Use the Analogy Properly. Luettavissa: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/. Luettu 3.11.2023.
+
+BrianC 2014. Error when trying vagrant up. Stack Overflow. Luettavissa: https://stackoverflow.com/questions/23874260/error-when-trying-vagrant-up. Luettu: 6.11.2023
+
+HashiCorp Developer s.a. Install Vagrant. Luettavissa: https://developer.hashicorp.com/vagrant/docs/installation. Luettu 6.11.2023.
 
 Karvinen 2017: Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds. Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/. Luettu 3.11.2023.
 
