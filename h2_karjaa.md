@@ -91,7 +91,7 @@ Teen palautuksen tästä ennen määräaikaa, mutta koitan vielä ennen tunnin a
 ## References
 Bias 2016: The History of Pets vs Cattle and How to Use the Analogy Properly. Luettavissa: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/. Luettu 3.11.2023.
 
-BrianC 2014. Error when trying vagrant up. Stack Overflow. Luettavissa: https://stackoverflow.com/questions/23874260/error-when-trying-vagrant-up. Luettu: 6.11.2023
+BrianC 2014. Error when trying vagrant up. Stack Overflow. Luettavissa: https://stackoverflow.com/questions/23874260/error-when-trying-vagrant-up. Luettu: 6.11.2023.
 
 HashiCorp Developer s.a. Install Vagrant. Luettavissa: https://developer.hashicorp.com/vagrant/docs/installation. Luettu 6.11.2023.
 
