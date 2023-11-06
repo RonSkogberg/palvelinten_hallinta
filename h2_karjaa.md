@@ -64,6 +64,20 @@ Lopuksi vielä testasin virtuaalikoneeni netin toimivuutta pingaamalla Googlen s
 
 ![ping](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/602a01c8-eac4-45e3-a316-d8c003be3018)
 
+## Oma orjansa
+Tässä osiossa luon Salt herran ja orjan samalle koneelleni. Osion tekemisessä käytin Karvisen ohjeistusta ja modifoituani versiota hänen konfiguroimasta Vagrant-tiedostosta (Karvinen 2023b).
+
+Siirryin GUI:n kautta muokkaamaan aiemmassa tehtävässä luomaani VagrantFileä, jotta se luo virtuaalikoneen, jossa on sekä herra-, orjakäyttäjät. Koska tehtävänannossa pyydettiin vain yhtä orja-käyttäjää, sovelsin Karvisen konfiguroimaa Vagrant-tiedostoa, kuitenkin poistaen siitä toisen orja-käyttäjän luontikoodin (Karvinen 2023b).
+
+![Vagrantfile_1](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/bc5ded52-b53e-4aab-9676-bfbc7c2b8eec)
+
+Suoritin ```$ vagrant up``` komennon Command Promtissa, joka luo uuden virtuaalikoneen (sekä tehtävänannossa pyydetyt herran ja orjan) perustuen muokkaamaani VagrantFileen.
+
+![vagrant_up_1](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/71fc94a1-d5fc-4637-ba2b-a7b83668ba96)
+![vagrant_up2](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/14e6b99f-1165-43ad-8b62-d12c68f87747)
+
+## Asenna Saltin herra-orja arkkitehtuuri toimimaan verkon yli
+
   
 ## References
 Bias 2016: The History of Pets vs Cattle and How to Use the Analogy Properly. Luettavissa: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/. Luettu 3.11.2023.
