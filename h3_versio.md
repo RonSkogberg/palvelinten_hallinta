@@ -14,7 +14,7 @@ Tässä osiossa tehtävänäni on luoda GitHubiini uusi varasto ja vähintään 
 
 Kirjauduttuani GitHubiin käyttäjätunnuksillani, pystyin luomaan uuden varaston (repository) suoraan etusivulta painamalla "Create a new repository" painiketta. Täytin luontilomakkeen tiedot/asetukset. Varmistin myös, että loin pyydetyn README.md tiedoston, käytin pyydettyä "winter" nimikettä tehtävänannon mukaisesti ja asetan GNU General Public License 3 -lisenssin.
 
-![2_repositorynLuominen](https://github.com/RonSkogberg/winter-duck/assets/148875466/0155a6bb-71ef-4b7d-a9a0-473766b50330)
+![2_repositorynLuominen](https://github.com/RonSkogberg/winter-duck/assets/148875466/4058c94d-5940-43f1-bf1b-6bc80413ab81)
 
 Luotuani varaston varmistin vielä sen olemassaolon siirtymällä sinne.
 
