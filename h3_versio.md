@@ -25,13 +25,15 @@ Tässä osiossa tehtävänäni on kloonata edellisessä osiossa luomani varasto,
 
 Kohtasin ensimmäisen ongelman heti kättelyssä; kun olin aikeissa kopioida GitHubistani luomani winter-duck -varaston SSH-linkin. GitHub ilmoitti, ettei käyttäjääni ole yhdistetty yhtään julkista SSH-avainta. 
 
-![7  SSHOnglema](https://github.com/RonSkogberg/winter-duck/assets/148875466/5c4cd424-9c8c-40db-bc27-ec2acccf759e)
+![7  SSHOnglema](https://github.com/RonSkogberg/winter-duck/assets/148875466/628f0914-953a-4c8c-9832-504d4b86bd43)
 
 Muistin edelliseltä luennolta, että Karvinen kohtasi saman ongelman, meni terminaaliinsa ja generoi avainparin ```$ ssh-keygen``` komennolla, josta hän lisäsi julkisen SSH-avaimen GitHub-käyttäjäänsä. Lähdin suorittamaan samaa toimenpidettä virtuaalikoneeni terminaalissa.
 
 ![6  Keygen](https://github.com/RonSkogberg/winter-duck/assets/148875466/56b68689-d8af-4af1-964d-c011f750bf02)
 
-```$ ssh-keygen``` komento generoi tosiaan sekä julkisen, että yksityisen SSH-avaimen piilotettuun .ssh -hakemistoon (piste hakemiston edessä tarkoittaa, että se on piilotettu). 
+```$ ssh-keygen``` komento generoi tosiaan sekä julkisen, että yksityisen SSH-avaimen piilotettuun .ssh -hakemistoon (piste hakemiston edessä tarkoittaa, että se on piilotettu). Siirryin Debian-virtuaalikoneeni desktopille tarkistamaan hakemiston ja avaimien olemassa olon
+
+![ssholemassaolo](https://github.com/RonSkogberg/winter-duck/assets/148875466/1772b04c-b165-4d3d-b57e-a5d517a00b45)
 
 
 
