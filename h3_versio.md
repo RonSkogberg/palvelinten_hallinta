@@ -1,7 +1,7 @@
 # Versio
-Tässä raportissa vastaan Tero Karvisen laatimaan tehtävänannon "h3 Versio" kaikkiin osioihin (Karvinen 2023a). Suoritan tehtävät käyttäen hyödyksi toteutuksella aiemmin luomaani Debian 12 -virtuaalikonetta VirtualBoxilla. Huomiona vielä, että a) Online -osion kuvankaappaukset on otettu rautalaitteellani, kun taas muut ovat otettu virtuaalikoneellani (siksi kuvien ulkoasu vaihtelee). 
+Tässä raportissa vastaan Tero Karvisen laatimaan tehtävänannon "h3 Versio" kaikkiin osioihin (Karvinen 2023a). Suoritan tehtävät käyttäen hyödyksi toteutuksella aiemmin luomaani Debian 12 -virtuaalikonetta VirtualBoxilla. Huomiona vielä, että raportin alkupään kuvankaappaukset on otettu rautalaitteellani, kun taas osa niistä on otettu virtuaalikoneellani. Tästä syystä kuvien ulkoasu vaihtelee hieman raportin aikana.
 
-Ennen varsinaisen tehtävän aloittamista päivitin Linuxin pakettivarastot  ```$ sudo apt-get update``` komennolla, jonka jälkeen päivitin paketit ```$ sudo apt-get dist-upgrade -y```. Asensin myös Git:in virtuaalikoneelleni komennolla ```$ sudo apt-get install git-all -y``` ja tarkistin sen version komennolla  ```git version``` todeten samalla asennuksen onnistumisen. Kaikki tarpeellinen näyttäisi olevan päivitettynä, joten eiköhän aloiteta!
+Ennen varsinaisen tehtävän aloittamista päivitin Linuxin pakettivarastot  ```$ sudo apt-get update``` komennolla, jonka jälkeen päivitin paketit ```$ sudo apt-get dist-upgrade -y```. Asensin myös Git:in virtuaalikoneelleni komennolla ```$ sudo apt-get install git-all -y``` ja tarkistin sen version komennolla  ```git version```. Git versioni näyttäisi olevan 2.39.2, eli se on todennettu asennetuksi. Kaikki tarpeellinen näyttäisi olevan päivitettynä, joten eiköhän aloiteta!
 
 ![1_DebianinPäivitys](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/9a501244-dc1b-4edb-b444-e84b4d28040a)
 
@@ -21,6 +21,17 @@ Luotuani varaston varmistin vielä sen olemassaolon siirtymällä sinne.
 ![3_repoTodiste](https://github.com/RonSkogberg/winter-duck/assets/148875466/60d79fba-f6be-4eb5-8086-d3c60bc09c8c)
 
 ## b) Dolly
+Tässä osiossa tehtävänäni on kloonata edellisessä osiossa luomani varasto, tehdä muutoksia sinne ja puskea ne palvelimelle. Lopuksi vielä tarkistin muutosten tapahtuneen.
+
+Kohtasin ensimmäisen ongelman heti kättelyssä; kun olin aikeissa kopioida GitHubistani luomani winter-duck -varaston SSH-linkin. GitHub ilmoitti, ettei käyttäjääni ole yhdistetty yhtään julkista SSH-avainta. 
+
+![7  SSHOnglema](https://github.com/RonSkogberg/winter-duck/assets/148875466/5c4cd424-9c8c-40db-bc27-ec2acccf759e)
+
+Muistin edelliseltä luennolta, että Karvinen kohtasi saman ongelman, meni terminaaliinsa ja generoi avainparin ```$ ssh-keygen``` komennolla, josta hän lisäsi julkisen SSH-avaimen GitHub-käyttäjäänsä. Lähdin suorittamaan samaa toimenpidettä virtuaalikoneeni terminaalissa.
+
+![6  Keygen](https://github.com/RonSkogberg/winter-duck/assets/148875466/56b68689-d8af-4af1-964d-c011f750bf02)
+
+```$ ssh-keygen``` komento generoi tosiaan sekä julkisen, että yksityisen SSH-avaimen piilotettuun .ssh -hakemistoon (piste hakemiston edessä tarkoittaa, että se on piilotettu). 
 
 
 
