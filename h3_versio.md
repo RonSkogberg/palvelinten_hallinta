@@ -40,6 +40,7 @@ Muistin Karvisen luennolta, että hän kohtasi saman ongelman. Karvinen meni ter
 Lopuksi vielä tarkistin, että SSH-avain oli tosiaan lisätty, ja että tehtävän alussa esiintynyt ilmoitusteksti avaimen puuttumisesta oli poissa.
 
 ![9 SSHkeylisätty](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/3687a965-0c87-465e-bae3-bdc57e5743cf)
+
 ![10 SSHongelmahoidettu](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/652b3ab3-8001-4f8a-a635-5b6aacf07193)
 
 Nyt kun sain kopioitua GitHubistani reponi kloonauslinkin, siirryin virtuaalikoneeni terminaalin puolelle viimeistelemään kloonauksen. Loin uuden hakemiston ```$ mkdir talviankka``` komennolla (myöhemmin huomatakseni, ettei se olisi ollut tarpeellista). Siirryin kyseiseen hakemistoon ja viimeistelin kloonauksen ```$ git clone git@githun.com:RonSkogberg/winter-duck.git``` komennolla. Kloonauksen aikana komentorivillä kysytään, että hyväksykö yhteyden luonnin siitäkin huolimatta, ettei GitHubin isäntäpalvelimen aitoutta voida varmentaa. Vastasin "yes", sillä pystyin tässä tapauksessa luottamaan yhteyden luotettavuuteen. Lopputuloksena syntyy "winter-duck" niminen hakemisto, johon siirryn seuraavaksi.
@@ -53,10 +54,17 @@ Siirryttyäni kloonaamaani hakemistoon ```$ cd winter-duck``` komennolla, tarkis
 Kun olen tehnyt tarvittavat muutokset, "työnnän" ne vielä luomaani GitHub-varastoon. Työntö tehdään komennolla ```$ git push origin main```. Terminaali ilmoittaa, että muutokset on tehty osoitteeseen github.com:RonSkogberg/winter-duck.git. Kävin myös varmistamassa GitHubin puolella, että tekemäni muutokset todellakin tapahtuivat. Lopputuloksesta näkee, että dollyankka.md-tiedosto on lisätty varastoon jälkikäteen.
 
 ![15 pushoriginmain](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/8739eeeb-c4db-4021-adeb-f967f4026cda)
+
 ![16 pushtulosonnistunut](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/11fbb618-719e-4797-9dd1-67d3e5e62045)
 
 ## c) Doh!
-Tässä osiossa tehtävänäni on tehdä tyhmiä muutoksia gittiin, ilman committia. Lopuksi tuhoan tekemäni muutokset. 
+Tässä osiossa tehtävänäni on tehdä tyhmiä muutoksia gittiin, ilman committia. Lopuksi tuhoan tekemäni muutokset.
+
+Oho! Dolly-Ankan kotiosoite ja vara-avaimen sijainti on vuotanut yhteen git-dokumenttiin. Tiedot on tuhottava välittömästi, ennen kuin rosvot huomaavat ne.
+
+Muokkaan tässä tehtävässä aiemmin luomaani dollyankka.md -tiedostoa. Tiedostomuutokset tein nanolla ja varmistin cat-komennolla, että muutokset tulivat voimaan. Arkaluontoiset tiedot on tuhottava, ja tehokkain tapa siihen on käyttää ```$ git reset --hard``` komentoa. 
+
+![17 dog](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/3587a2da-79e1-4465-9080-7992e7eab2c1)
 
 
 
