@@ -80,6 +80,10 @@ Suoritin virtuaalikoneeni terminaalissa komennon ```$ git log``` ja lopputulos n
 
 Alempi commit-merkintä, jossa authorina on RonSkogberg (yhteen kirjoitettuna), lienee tullut silloin, kun suoritin kloonauksen SSH-linkin kautta. Tässä RonSkogberg viittaa GitHub-käyttäjääni. Ylempi commit-merkintä, jossa on mainittu "tiedosto lisätty", viittaa aiempaan kohtaan kun suoritin komennon ``$ git commit -m "tiedosto lisätty"``` Dolly-tehtävässä. Lokimerkintöjä näyttää siis jäävän kaikista toimenpiteistä, jotka ovat tallennettu/commattu. Edellisen tehtäväosion (Doh!) lokimerkintää ei jäänyt talteen, koska en suorittanut committia.
 
+Hieman tehtävänantoa sivuuttaen lähdin vielä kokeilemaan minkälaisia lokimerkintöjä saan aikaiseksi. En pitänyt tavasta, jolla sähköpostini oli ilmoitettu, joten koitin muuttaa sitä ```$ git config --global user.email "skogberg.ron@gmail.com"``` komennolla. Tämän jälkeen uudelleensuoritin ```$ git log``` komennon, jonka tuloksena sähköpostiosoitteeni pysyi ```rontti@localhost.localdomain```-muodossa. Tein kokeiluja lisää ja loin uuden tiedoston nimeltään aku-ankka.md. Lisäsin sen ```$ git add aku-ankka.md``` komennolla ja committasin sen. Tämän jälkeen suoritin vielä kerran ```$ git log``` komennon, jonka seuraksena uusi lokimerkintä oli luotu, ja jossa oli vielä tämä minun päivitetty sähköpostiosoite. Oivalsin tässä kohtaa, että sehän käy järkeen; vaihdettuani sähköpostin ja suoritettuani UUSIA committauksia, näkyy uusi määrittelemäni sähköpostiosoite vasta niissä, eikä luonnollisesti vanhoissa, jotka suoritin vanhoilla config-asetuksilla.
+
+![Ylimääräistä](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/a7ca07d9-11f8-4b36-a231-cf2b05b651ae)
+
 ## References
 
 Gallagher 2020: Git Log: How to Use It. Career Karma. Luettavissa: https://careerkarma.com/blog/git-log/. Luettu 11.11.2023.
