@@ -71,8 +71,18 @@ Huomautuksena vielä, että ```$ git reset --hard``` komentoa ei voi peruuttaa j
 
 ![17 dog](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/3587a2da-79e1-4465-9080-7992e7eab2c1)
 
+## d) Tukki
+Tässä osiossa tehtävänäni on tutkia hieman varastoni lokia. Pohjustuksena tässä osiossa käytin James Gallagherin kirjoittamaa artikkelia: Git Log: How to Use It (Gallagher 2020).
+
+Suoritin virtuaalikoneeni terminaalissa komennon ```$ git log``` ja lopputulos näytti tältä:
+
+![gitlog](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/516808dd-5bec-4c8a-9a75-589b4c6f7151)
+
+Alempi commit-merkintä, jossa authorina on RonSkogberg (yhteen kirjoitettuna), lienee tullut silloin, kun suoritin kloonauksen SSH-linkin kautta. Tässä RonSkogberg viittaa GitHub-käyttäjääni. Ylempi commit-merkintä, jossa on mainittu "tiedosto lisätty", viittaa aiempaan kohtaan kun suoritin komennon ``$ git commit -m "tiedosto lisätty"``` Dolly-tehtävässä. Lokimerkintöjä näyttää siis jäävän kaikista toimenpiteistä, jotka ovat tallennettu/commattu. Edellisen tehtäväosion (Doh!) lokimerkintää ei jäänyt talteen, koska en suorittanut committia.
 
 ## References
+
+Gallagher 2020: Git Log: How to Use It. Career Karma. Luettavissa: https://careerkarma.com/blog/git-log/. Luettu 11.11.2023.
 
 Karvinen 2023: Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/. Luettu 8.11.2023.
 
