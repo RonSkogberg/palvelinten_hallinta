@@ -51,7 +51,7 @@ Siirryttyäni kloonaamaani hakemistoon ```$ cd winter-duck``` komennolla, tarkis
 
 ![14 addcommitdolly](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/45c43793-14b8-463e-a37e-4867b7ba3e31)
 
-Kun olen tehnyt tarvittavat muutokset, "työnnän" ne vielä luomaani GitHub-varastoon. Työntö tehdään komennolla ```$ git push origin main```. Terminaali ilmoittaa, että muutokset on tehty osoitteeseen github.com:RonSkogberg/winter-duck.git. Kävin myös varmistamassa GitHubin puolella, että tekemäni muutokset todellakin tapahtuivat. Lopputuloksesta näkee, että dollyankka.md-tiedosto on lisätty varastoon jälkikäteen.
+Kun olen tehnyt tarvittavat muutokset, "työnnän" ne vielä luomaani GitHub-varastoon. Työntö tehdään komennolla ```$ git push origin main```. Terminaali ilmoittaa, että muutokset on tehty osoitteeseen: github.com:RonSkogberg/winter-duck.git. Kävin myös varmistamassa GitHubin puolella, että tekemäni muutokset todellakin tapahtuivat. Lopputuloksesta näkee, että dollyankka.md-tiedosto on lisätty varastoon jälkikäteen.
 
 ![15 pushoriginmain](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/8739eeeb-c4db-4021-adeb-f967f4026cda)
 
