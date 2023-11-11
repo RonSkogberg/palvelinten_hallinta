@@ -1,5 +1,5 @@
 # Versio
-Tässä raportissa vastaan Tero Karvisen laatimaan tehtävänannon "h3 Versio" kaikkiin osioihin (Karvinen 2023a). Suoritan tehtävät käyttäen hyödyksi toteutuksella aiemmin luomaani Debian 12 -virtuaalikonetta VirtualBoxilla. Huomiona vielä, että raportin alkupään kuvankaappaukset on otettu rautalaitteellani, kun taas osa niistä on otettu virtuaalikoneellani. Tästä syystä kuvien ulkoasu vaihtelee hieman raportin aikana.
+Tässä raportissa vastaan Tero Karvisen laatimaan tehtävänannon "h3 Versio" kaikkiin osioihin (Karvinen 2023). Suoritan tehtävät käyttäen hyödyksi toteutuksella aiemmin luomaani Debian 12 -virtuaalikonetta VirtualBoxilla. Huomiona vielä, että raportin alkupään kuvankaappaukset on otettu rautalaitteellani, kun taas myöhemmät kuvat on otettu virtuaalikoneellani. Tästä syystä kuvien ulkoasu vaihtelee hieman raportin aikana.
 
 Ennen varsinaisen tehtävän aloittamista päivitin Linuxin pakettivarastot  ```$ sudo apt-get update``` komennolla, jonka jälkeen päivitin paketit ```$ sudo apt-get dist-upgrade -y```. Asensin myös Git:in virtuaalikoneelleni komennolla ```$ sudo apt-get install git-all -y``` ja tarkistin sen version komennolla  ```git version```. Git versioni näyttäisi olevan 2.39.2, eli se on todennettu asennetuksi. Kaikki tarpeellinen näyttäisi olevan päivitettynä, joten eiköhän aloiteta!
 
@@ -62,13 +62,18 @@ Tässä osiossa tehtävänäni on tehdä tyhmiä muutoksia gittiin, ilman commit
 
 Oho! Dolly-Ankan kotiosoite ja vara-avaimen sijainti on vuotanut yhteen git-dokumenttiin. Tiedot on tuhottava välittömästi, ennen kuin rosvot huomaavat ne.
 
-Muokkaan tässä tehtävässä aiemmin luomaani dollyankka.md -tiedostoa. Tiedostomuutokset tein nanolla ja varmistin cat-komennolla, että muutokset tulivat voimaan. Arkaluontoiset tiedot on tuhottava, ja tehokkain tapa siihen on käyttää ```$ git reset --hard``` komentoa. 
+Muokkaan tässä tehtävässä aiemmin luomaani dollyankka.md -tiedostoa. Tiedostomuutokset tein nanolla ja varmistin cat-komennolla, että muutokset tulivat voimaan. Arkaluontoiset tiedot on tuhottava, ja tehokkain tapa siihen on käyttää ```$ git reset --hard``` komentoa. Komennon "git reset" osuus purkaa pelkästään commitin. Kun siihen lisätään "--hard" osuus, purkaa se commitin SEKÄ
+poistaa indeksistä sekä työkopiosta kaikki viime commitin jälkeiset muutokset (Polvinen 2020).
+
+Lopuksi tarkistin, että aiemmin lisätyt arkaluontoiset tiedot ovat peruutettu lukemalla dollyankka.md tiedoston sisällön. Tiedot ovat peruutettu ja Dolly-ankka voi nukkua yönsä rauhassa.
+
+Huomautuksena vielä, että ```$ git reset --hard``` komentoa ei voi peruuttaa ja sitä tulisi käyttää harkiten, sillä se todellakin poistaa kaikki tallentamattomat muutokset.
 
 ![17 dog](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/3587a2da-79e1-4465-9080-7992e7eab2c1)
 
 
-
-
 ## References
 
-Karvinen 2023a: Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/. Luettu 8.11.2023.
+Karvinen 2023: Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/. Luettu 8.11.2023.
+
+Polvinen 2020: Pieni Git-opas. 2.2 Paikallisen commitin muokkaus (git amend). University of Turku. Luettavissa: https://vm.utu.fi/document/fi_pieni-git-opas.pdf. Luettu: 11.11.2023.
