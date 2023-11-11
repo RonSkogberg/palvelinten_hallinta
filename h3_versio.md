@@ -27,14 +27,24 @@ Kohtasin ensimmäisen ongelman heti kättelyssä; kun olin aikeissa kopioida Git
 
 ![7  SSHOnglema](https://github.com/RonSkogberg/winter-duck/assets/148875466/628f0914-953a-4c8c-9832-504d4b86bd43)
 
-Muistin edelliseltä luennolta, että Karvinen kohtasi saman ongelman, meni terminaaliinsa ja generoi avainparin ```$ ssh-keygen``` komennolla, josta hän lisäsi julkisen SSH-avaimen GitHub-käyttäjäänsä. Lähdin suorittamaan samaa toimenpidettä virtuaalikoneeni terminaalissa.
+Muistin Karvisen luennolta, että hän kohtasi saman ongelman. Karvinen meni terminaaliinsa ja generoi avainparin ```$ ssh-keygen``` komennolla, josta hän lisäsi julkisen SSH-avaimen GitHub-käyttäjäänsä. Lähdin suorittamaan samaa toimenpidettä virtuaalikoneeni terminaalissa.
 
 ![6  Keygen](https://github.com/RonSkogberg/winter-duck/assets/148875466/56b68689-d8af-4af1-964d-c011f750bf02)
 
-```$ ssh-keygen``` komento generoi tosiaan sekä julkisen, että yksityisen SSH-avaimen piilotettuun .ssh -hakemistoon (piste hakemiston edessä tarkoittaa, että se on piilotettu). Siirryin Debian-virtuaalikoneeni desktopille tarkistamaan hakemiston ja avaimien olemassa olon
+```$ ssh-keygen``` komento generoi tosiaan sekä julkisen, että yksityisen SSH-avaimen piilotettuun .ssh -hakemistoon (piste hakemiston edessä tarkoittaa, että se on piilotettu). Siirryin Debian-virtuaalikoneeni desktopille tarkistamaan hakemiston ja avaimien olemassa olon ja siellähän molemmat avaimeni olivat. Avasin id_rsa.pub-tiedoston LibreOffice Writerilla ja kopioin avaimen Githubin käyttäjälleni.
 
 ![ssholemassaolo](https://github.com/RonSkogberg/winter-duck/assets/148875466/1772b04c-b165-4d3d-b57e-a5d517a00b45)
 
+![8_lisääSSHKEY](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/418cc0a6-edd7-4e81-a048-7e413352575c)
+
+Lopuksi vielä tarkistin, että SSH-avain oli tosiaan lisätty, ja että tehtävän alussa esiintynyt ilmoitusteksti avaimen puuttumisesta oli poissa.
+
+![9 SSHkeylisätty](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/3687a965-0c87-465e-bae3-bdc57e5743cf)
+![10 SSHongelmahoidettu](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/652b3ab3-8001-4f8a-a635-5b6aacf07193)
+
+Nyt kun sain kopioitua GitHubistani reponi kloonauslinkin, siirryin virtuaalikoneeni terminaalin puolelle viimeistelemään kloonauksen. Loin uuden hakemiston ```$ mkdir talviankka``` komennolla (myöhemmin huomatakseni, ettei se olisi ollut tarpeellista). Siirryin kyseiseen hakemistoon ja viimeistelin kloonauksen ```$ git clone git@githun.com:RonSkogberg/winter-duck.git``` komennolla. Kloonauksen aikana komentorivillä kysytään, että hyväksykö yhteyden luonnin siitäkin huolimatta, ettei GitHubin isäntäpalvelimen aitoutta voida varmentaa. Vastasin "yes", sillä pystyin tässä tapauksessa luottamaan yhteyden luotettavuuteen.
+
+![12_cloonaawinter](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/c3e117db-5284-40f6-b857-90a216b25694)
 
 
 
