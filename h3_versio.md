@@ -42,9 +42,21 @@ Lopuksi vielä tarkistin, että SSH-avain oli tosiaan lisätty, ja että tehtäv
 ![9 SSHkeylisätty](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/3687a965-0c87-465e-bae3-bdc57e5743cf)
 ![10 SSHongelmahoidettu](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/652b3ab3-8001-4f8a-a635-5b6aacf07193)
 
-Nyt kun sain kopioitua GitHubistani reponi kloonauslinkin, siirryin virtuaalikoneeni terminaalin puolelle viimeistelemään kloonauksen. Loin uuden hakemiston ```$ mkdir talviankka``` komennolla (myöhemmin huomatakseni, ettei se olisi ollut tarpeellista). Siirryin kyseiseen hakemistoon ja viimeistelin kloonauksen ```$ git clone git@githun.com:RonSkogberg/winter-duck.git``` komennolla. Kloonauksen aikana komentorivillä kysytään, että hyväksykö yhteyden luonnin siitäkin huolimatta, ettei GitHubin isäntäpalvelimen aitoutta voida varmentaa. Vastasin "yes", sillä pystyin tässä tapauksessa luottamaan yhteyden luotettavuuteen.
+Nyt kun sain kopioitua GitHubistani reponi kloonauslinkin, siirryin virtuaalikoneeni terminaalin puolelle viimeistelemään kloonauksen. Loin uuden hakemiston ```$ mkdir talviankka``` komennolla (myöhemmin huomatakseni, ettei se olisi ollut tarpeellista). Siirryin kyseiseen hakemistoon ja viimeistelin kloonauksen ```$ git clone git@githun.com:RonSkogberg/winter-duck.git``` komennolla. Kloonauksen aikana komentorivillä kysytään, että hyväksykö yhteyden luonnin siitäkin huolimatta, ettei GitHubin isäntäpalvelimen aitoutta voida varmentaa. Vastasin "yes", sillä pystyin tässä tapauksessa luottamaan yhteyden luotettavuuteen. Lopputuloksena syntyy "winter-duck" niminen hakemisto, johon siirryn seuraavaksi.
 
 ![12_cloonaawinter](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/c3e117db-5284-40f6-b857-90a216b25694)
+
+Siirryttyäni kloonaamaani hakemistoon ```$ cd winter-duck``` komennolla, tarkistin vielä sen sisältävän samat tiedostot, kuin mitä olin GitHubin varastooni luonut. Tiedostot olivat samat. Halusin tehdä uuden tiedoston nano-tekstieditorilla, jonka nimesin dollyankka.md -tiedostoksi. Käytin ```$ git add .``` komentoa osoittamaan muutoksia seuraavia toimenpiteitä varten. Tätä komentoa seuraa ```$ git commit -m "tiedosto lisätty"```, joka tallentaa muutokset Git-varaston muutoshistoriaan.
+
+![14 addcommitdolly](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/45c43793-14b8-463e-a37e-4867b7ba3e31)
+
+Kun olen tehnyt tarvittavat muutokset, "työnnän" ne vielä luomaani GitHub-varastoon. Työntö tehdään komennolla ```$ git push origin main```. Terminaali ilmoittaa, että muutokset on tehty osoitteeseen github.com:RonSkogberg/winter-duck.git. Kävin myös varmistamassa GitHubin puolella, että tekemäni muutokset todellakin tapahtuivat. Lopputuloksesta näkee, että dollyankka.md-tiedosto on lisätty varastoon jälkikäteen.
+
+![15 pushoriginmain](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/8739eeeb-c4db-4021-adeb-f967f4026cda)
+![16 pushtulosonnistunut](https://github.com/RonSkogberg/palvelinten_hallinta/assets/148875466/11fbb618-719e-4797-9dd1-67d3e5e62045)
+
+## c) Doh!
+Tässä osiossa tehtävänäni on tehdä tyhmiä muutoksia gittiin, ilman committia. Lopuksi tuhoan tekemäni muutokset. 
 
 
 
